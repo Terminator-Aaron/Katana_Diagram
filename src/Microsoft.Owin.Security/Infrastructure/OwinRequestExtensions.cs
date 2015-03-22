@@ -12,7 +12,8 @@ namespace Microsoft.Owin.Security.Infrastructure
     using AuthenticateCallback = Action<IIdentity, IDictionary<string, string>, IDictionary<string, object>, object>;
     using AuthenticateDelegate = Func<string[], Action<IIdentity, IDictionary<string, string>, IDictionary<string, object>, object>, object, Task>;
 
-    internal static class OwinRequestExtensions
+    // internal
+    public static class OwinRequestExtensions
     {
         public static object RegisterAuthenticationHandler(this IOwinRequest request, AuthenticationHandler handler)
         {

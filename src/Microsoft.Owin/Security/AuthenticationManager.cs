@@ -179,7 +179,7 @@ namespace Microsoft.Owin.Security
             }
             else
             {
-                // Cumulative auth types
+                // Cumulative auth types ÀÛ»ýµÄ
                 string[] mergedAuthTypes = priorChallenge.AuthenticationTypes.Concat(authenticationTypes).ToArray();
 
                 if (properties != null && !object.ReferenceEquals(properties.Dictionary, priorChallenge.Properties.Dictionary))
